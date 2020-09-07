@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Header from "./components/Header";
 import Bookshelf from "./containers/bookshelf";
 import Login from "./containers/Login";
 import NotFound from "./containers/NotFound";
@@ -12,7 +13,7 @@ function App() {
       <Router>
         <div>
           <div>
-            <p>Header and etc</p>
+            <Header />
           </div>
           <div>
             <Switch>
