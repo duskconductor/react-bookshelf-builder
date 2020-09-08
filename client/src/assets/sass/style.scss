@@ -2,6 +2,7 @@
 
 body {
   font-family: $body-font-fam;
-  line-height: 2.2rem;
+  line-height: 2rem;
+  justify-content: left;
   @include fluid-type(320px, 1200px, 18px, 22px);
 }

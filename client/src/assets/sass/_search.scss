@@ -44,24 +44,63 @@
         font-weight: bolder;
         letter-spacing: 0.75rem;
         @include fluid-type(320px, 1200px, 20px, 30px);
-        line-height: 4.5rem;
+        line-height: 4.1rem;
       }
 
       .bookContainer {
         display: block;
-        height: 300px;
         width: 100%;
-        margin: 3vh 0;
-        background-color: red;
-        overflow: auto;
+        margin: 5vh 0;
+        padding: 4vw;
+        border-bottom: 2px dashed #ffac41;
 
-        .bookFirstColumn {
-          width: 17%;
-          float: left;
+        h3 {
+          font-family: $header-font-fam;
+          color: #ffac41;
+          @include fluid-type(320px, 1200px, 25px, 35px);
         }
 
-        .bookSecondColumn {
-          //color: white;
+        h5 {
+          font-family: $header-font-fam;
+          @include fluid-type(320px, 1200px, 15px, 20px);
+        }
+
+        .bookFirstRow {
+          width: 100%;
+          float: left;
+          text-align: center;
+          overflow: hidden;
+
+          .bookImageContainer {
+            width: 17%;
+            display: inline-block;
+            overflow: auto;
+
+            img {
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+
+        .bookSecondRow {
+          //
+        }
+
+        .bookBottom {
+          display: block;
+          width: 100%;
+          margin: 4vh 0;
+          text-align: center;
+
+          .bookButton {
+            font-family: $header-font-fam;
+            width: 100%;
+            background-color: #ffac41;
+            border-radius: 10px;
+            color: #fff;
+            padding: 2vh;
+          }
         }
       }
     }

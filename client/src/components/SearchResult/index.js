@@ -18,12 +18,12 @@ const SearchResult = (props) => {
             <div className="bookContainer" id={book.title}>
               <h3>{book.title}</h3>
               <h5>{book.author}</h5>
-              <div className="bookFirstColumn">
+              <div className="bookFirstRow">
                 <div className="bookImageContainer">
                   <img src={book.image} alt={book.title} />
                 </div>
               </div>
-              <div className="bookSecondColumn">
+              <div className="bookSecondRow">
                 <p>
                   {book.description.substring(0, 300)}...{" "}
                   <a href={book.link} target="_blank">
