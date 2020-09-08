@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./assets/css/reset.css";
+import "./assets/css/style.css";
 import Header from "./components/Header";
 import Bookshelf from "./containers/bookshelf";
 import Login from "./containers/Login";

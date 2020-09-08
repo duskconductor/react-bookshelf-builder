@@ -1,0 +1,21 @@
+.headerWrapper {
+  width: 100vw;
+  height: 20vw;
+  position: relative;
+  background: url("../images/bookshelf.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  .headerContainer {
+    position: fixed;
+  }
+
+  .headerText {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 5px;
+    color: #fff;
+  }
+}

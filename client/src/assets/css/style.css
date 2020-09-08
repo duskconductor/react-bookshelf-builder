@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Inknut+Antiqua:wght@800&display=swap");
+.headerWrapper {
+  width: 100vw;
+  height: 20vw;
+  position: relative;
+  background: url("../images/bookshelf.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.headerWrapper .headerContainer {
+  position: fixed;
+}
+
+.headerWrapper .headerText {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 5px;
+  color: #fff;
+}
+
+.searchWrap {
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.searchWrap .searchbarWrap {
+  width: 100vw;
+}
+
+.searchWrap .searchbarWrap .searchbarField {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

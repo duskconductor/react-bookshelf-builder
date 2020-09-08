@@ -58,7 +58,7 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="searchWrap">
         <Searchbar
           search={this.state.search}
           handleInputChange={this.handleInputChange}

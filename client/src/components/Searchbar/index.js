@@ -3,13 +3,13 @@ import React from "react";
 const Searchbar = (props) => {
   return (
     <form>
-      <div className="form-group">
+      <div className="searchbarWrap">
         <label className="BookSearchLabel">
           <h3>Search For Book</h3>
         </label>
         <br></br>
         <input
-          className="col-12 form-control"
+          className="searchbarField"
           value={props.search}
           type="text"
           name="searchBook"
