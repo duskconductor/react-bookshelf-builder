@@ -1,1 +1,7 @@
 @import "variables", "header", "search", "save";
+
+body {
+  font-family: $body-font-fam;
+  line-height: 2.2rem;
+  @include fluid-type(320px, 1200px, 18px, 22px);
+}
