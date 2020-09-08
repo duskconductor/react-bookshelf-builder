@@ -301,13 +301,6 @@
   padding: 2vh;
 }
 
-@media screen and (max-width: 1099px) {
-  .bookFirstColumn {
-    width: 100%;
-    display: block;
-  }
-}
-
 body {
   font-family: "Crimson Text", serif;
   line-height: 2rem;
