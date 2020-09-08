@@ -7,38 +7,18 @@ class Header extends React.Component {
       <div className="headerWrapper">
         <div className="headerContainer">
           <div className="headerLinkList">
-            <Link
-              className={
-                window.location.pathname === "/login"
-                  ? "navLink active"
-                  : "navLink"
-              }
-              to="/login"
-            >
-              Log In
-            </Link>
-            <Link
-              className={
-                window.location.pathname === "/" ? "navLink active" : "navLink"
-              }
-              to="/"
-            >
+            <Link className="navLink" to="/">
               Search Books
             </Link>
-            <Link
-              className={
-                window.location.pathname === "/bookshelf"
-                  ? "navLink active"
-                  : "navLink"
-              }
-              to="/bookshelf"
-            >
-              Your Bookshelf
+            <Link className="navLink" to="/bookshelf">
+              The Bookshelf
             </Link>
           </div>
         </div>
         <div className="headerText">
-          <h1>Bookshelf Builder</h1>
+          <h1>
+            Bookshelf <span className="headTextEmph">Builder</span>
+          </h1>
         </div>
       </div>
     );
