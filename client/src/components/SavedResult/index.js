@@ -13,18 +13,16 @@ const SavedResult = (props) => {
         {props.books.map((book) => {
           return (
             <div className="bookContainer" id={book.title}>
-              <div className="bookFirstColumn">
-                <div className="bookTitle">{book.title}</div>
+              <h3>{book.title}</h3>
+              <h5>{book.author}</h5>
+              <div className="bookFirstRow">
                 <div className="bookImageContainer">
                   <img src={book.image} alt={book.title} />
                 </div>
               </div>
-              <div className="bookSecondColumn">
-                <h3>{book.title}</h3>
-                <h5>{book.author}</h5>
-                <p>{book.description}</p>
-                <br />
+              <div className="bookSecondRow">
                 <p>
+                  {book.description.substring(0, 300)}...{" "}
                   <a href={book.link} target="_blank">
                     Learn More
                   </a>

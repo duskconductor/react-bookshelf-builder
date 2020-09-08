@@ -35,9 +35,9 @@ const SearchResult = (props) => {
                 <button
                   className="bookButton"
                   id={book.id}
-                  onClick={(e) => props.handleSavedButton(e)}
+                  onClick={() => props.handleDeleteButton(book.id)}
                 >
-                  Save Book
+                  Remove
                 </button>
               </div>
             </div>
