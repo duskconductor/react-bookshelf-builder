@@ -399,6 +399,7 @@
   width: 17%;
   display: inline-block;
   overflow: auto;
+  margin-top: 2vh;
 }
 
 .bookshelfWrapper .searchResultWrapper .searchResultContent .bookContainer .bookFirstRow .bookImageContainer img {
