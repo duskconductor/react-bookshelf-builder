@@ -14,7 +14,7 @@ const SavedResult = (props) => {
           return (
             <div className="bookContainer" id={book.title}>
               <h3>{book.title}</h3>
-              <h5>{book.author}</h5>
+              <h5>{book.authors}</h5>
               <div className="bookFirstRow">
                 <div className="bookImageContainer">
                   <img src={book.image} alt={book.title} />
@@ -31,8 +31,8 @@ const SavedResult = (props) => {
               <div className="bookBottom">
                 <button
                   className="bookButton"
-                  id={book.id}
-                  onClick={() => props.handleDeleteButton(book.id)}
+                  id={book._id}
+                  onClick={() => props.handleDeleteButton(book._id)}
                 >
                   Remove
                 </button>
