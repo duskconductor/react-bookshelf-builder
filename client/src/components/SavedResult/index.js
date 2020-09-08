@@ -32,7 +32,7 @@ const SavedResult = (props) => {
                 <button
                   className="bookButton"
                   id={book._id}
-                  onClick={() => props.handleDeleteButton(this.id)}
+                  onClick={() => props.handleDeleteButton(book._id)}
                 >
                   Remove
                 </button>
