@@ -198,7 +198,7 @@
   font-family: "Indie Flower", cursive;
   font-weight: bolder;
   letter-spacing: 0.75rem;
-  line-height: 4.5rem;
+  line-height: 4.1rem;
 }
 
 .searchWrap .searchResultWrapper .searchResultContent h2 {
@@ -219,16 +219,86 @@
 
 .searchWrap .searchResultWrapper .searchResultContent .bookContainer {
   display: block;
-  height: 300px;
   width: 100%;
-  margin: 3vh 0;
-  background-color: red;
+  margin: 5vh 0;
+  padding: 4vw;
+  border-bottom: 2px dashed #ffac41;
+}
+
+.searchWrap .searchResultWrapper .searchResultContent .bookContainer h3 {
+  font-family: "Inknut Antiqua", serif;
+  color: #ffac41;
+}
+
+.searchWrap .searchResultWrapper .searchResultContent .bookContainer h3 {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 320px) {
+  .searchWrap .searchResultWrapper .searchResultContent .bookContainer h3 {
+    font-size: calc( 25px + strip-unit(10px) * ((100vw - 320px) / strip-unit(880px)));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .searchWrap .searchResultWrapper .searchResultContent .bookContainer h3 {
+    font-size: 35px;
+  }
+}
+
+.searchWrap .searchResultWrapper .searchResultContent .bookContainer h5 {
+  font-family: "Inknut Antiqua", serif;
+}
+
+.searchWrap .searchResultWrapper .searchResultContent .bookContainer h5 {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 320px) {
+  .searchWrap .searchResultWrapper .searchResultContent .bookContainer h5 {
+    font-size: calc( 15px + strip-unit(5px) * ((100vw - 320px) / strip-unit(880px)));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .searchWrap .searchResultWrapper .searchResultContent .bookContainer h5 {
+    font-size: 20px;
+  }
+}
+
+.searchWrap .searchResultWrapper .searchResultContent .bookContainer .bookFirstRow {
+  width: 100%;
+  float: left;
+  text-align: center;
+  overflow: hidden;
+}
+
+.searchWrap .searchResultWrapper .searchResultContent .bookContainer .bookFirstRow .bookImageContainer {
+  width: 17%;
+  display: inline-block;
   overflow: auto;
 }
 
-.searchWrap .searchResultWrapper .searchResultContent .bookContainer .bookFirstColumn {
-  width: 17%;
-  float: left;
+.searchWrap .searchResultWrapper .searchResultContent .bookContainer .bookFirstRow .bookImageContainer img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.searchWrap .searchResultWrapper .searchResultContent .bookContainer .bookBottom {
+  display: block;
+  width: 100%;
+  margin: 4vh 0;
+  text-align: center;
+}
+
+.searchWrap .searchResultWrapper .searchResultContent .bookContainer .bookBottom .bookButton {
+  font-family: "Inknut Antiqua", serif;
+  width: 100%;
+  background-color: #ffac41;
+  border-radius: 10px;
+  color: #fff;
+  padding: 2vh;
 }
 
 @media screen and (max-width: 1099px) {
@@ -240,7 +310,10 @@
 
 body {
   font-family: "Crimson Text", serif;
-  line-height: 2.2rem;
+  line-height: 2rem;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 body {
