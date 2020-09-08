@@ -22,7 +22,6 @@ class Bookshelf extends React.Component {
   render() {
     return (
       <div className="bookshelfWrapper">
-        <p>{this.state.books}</p>
         <SavedResult
           books={this.state.books}
           handleDeleteButton={() => this.handleDeleteButton}
