@@ -6,7 +6,7 @@ class Header extends React.Component {
     return (
       <div className="headerWrapper">
         <div className="headerContainer">
-          <div className="navbarLinkList">
+          <div className="headerLinkList">
             <Link
               className={
                 window.location.pathname === "/login"
@@ -38,7 +38,7 @@ class Header extends React.Component {
           </div>
         </div>
         <div className="headerText">
-          <p>Bookshelf Builder</p>
+          <h1>Bookshelf Builder</h1>
         </div>
       </div>
     );
