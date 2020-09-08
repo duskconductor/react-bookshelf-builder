@@ -4,7 +4,7 @@ const SavedResult = (props) => {
   return props.books.length === 0 ? (
     <div className="searchResultWrapper">
       <div className="searchResultContent">
-        <p>Nothing found</p>
+        <p></p>
       </div>
     </div>
   ) : (

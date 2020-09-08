@@ -51,7 +51,7 @@ class Search extends React.Component {
 
     savedBooks = savedBooks[0];
 
-    API.saveBooks(savedBooks)
+    API.saveBook(savedBooks)
       .then(this.setState({ message: alert("Your book is saved") }))
       .catch((err) => console.log(err));
   };
