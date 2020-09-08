@@ -65,6 +65,7 @@ class Search extends React.Component {
           handleFormSubmit={this.handleFormSubmit}
         />
         <SearchResult
+          searched={this.state.search}
           books={this.state.books}
           handleSavedButton={this.handleSavedButton}
         />

@@ -21,8 +21,9 @@
 }
 
 .headerWrapper .headerContainer {
-  width: 98%;
+  width: 100%;
   position: fixed;
+  z-index: 9;
   padding: 2.5vh 0;
   background: rgba(0, 0, 0, 0.75);
 }
@@ -45,7 +46,7 @@
 
 @media screen and (min-width: 320px) {
   .headerWrapper .headerContainer .headerLinkList {
-    font-size: calc( 10px + strip-unit(10px) * ((100vw - 320px) / strip-unit(880px)));
+    font-size: calc( 10px + strip-unit(10px) * ((100vw - 320px) / strip-unit(880px)));
   }
 }
 
@@ -83,7 +84,7 @@
 
 @media screen and (min-width: 320px) {
   .headerWrapper .headerText h1 {
-    font-size: calc( 40px + strip-unit(20px) * ((100vw - 320px) / strip-unit(880px)));
+    font-size: calc( 40px + strip-unit(20px) * ((100vw - 320px) / strip-unit(880px)));
   }
 }
 
@@ -104,7 +105,7 @@
 
 @media screen and (min-width: 320px) {
   .headerWrapper .headerText h1 .headTextEmph {
-    font-size: calc( 50px + strip-unit(20px) * ((100vw - 320px) / strip-unit(880px)));
+    font-size: calc( 50px + strip-unit(20px) * ((100vw - 320px) / strip-unit(880px)));
   }
 }
 
@@ -149,7 +150,7 @@
 
 @media screen and (min-width: 320px) {
   .searchWrap .searchbarWrap .searchbarField {
-    font-size: calc( 12px + strip-unit(10px) * ((100vw - 320px) / strip-unit(880px)));
+    font-size: calc( 12px + strip-unit(10px) * ((100vw - 320px) / strip-unit(880px)));
   }
 }
 
@@ -172,12 +173,88 @@
 
 @media screen and (min-width: 320px) {
   .searchWrap .searchbarWrap .searchBtn {
-    font-size: calc( 12px + strip-unit(10px) * ((100vw - 320px) / strip-unit(880px)));
+    font-size: calc( 12px + strip-unit(10px) * ((100vw - 320px) / strip-unit(880px)));
   }
 }
 
 @media screen and (min-width: 1200px) {
   .searchWrap .searchbarWrap .searchBtn {
+    font-size: 22px;
+  }
+}
+
+.searchWrap .searchResultWrapper {
+  background-color: #fff;
+  width: 100%;
+}
+
+.searchWrap .searchResultWrapper .searchResultContent {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 5vh;
+}
+
+.searchWrap .searchResultWrapper .searchResultContent h2 {
+  font-family: "Indie Flower", cursive;
+  font-weight: bolder;
+  letter-spacing: 0.75rem;
+  line-height: 4.5rem;
+}
+
+.searchWrap .searchResultWrapper .searchResultContent h2 {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .searchWrap .searchResultWrapper .searchResultContent h2 {
+    font-size: calc( 20px + strip-unit(10px) * ((100vw - 320px) / strip-unit(880px)));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .searchWrap .searchResultWrapper .searchResultContent h2 {
+    font-size: 30px;
+  }
+}
+
+.searchWrap .searchResultWrapper .searchResultContent .bookContainer {
+  display: block;
+  height: 300px;
+  width: 100%;
+  margin: 3vh 0;
+  background-color: red;
+  overflow: auto;
+}
+
+.searchWrap .searchResultWrapper .searchResultContent .bookContainer .bookFirstColumn {
+  width: 17%;
+  float: left;
+}
+
+@media screen and (max-width: 1099px) {
+  .bookFirstColumn {
+    width: 100%;
+    display: block;
+  }
+}
+
+body {
+  font-family: "Crimson Text", serif;
+  line-height: 2.2rem;
+}
+
+body {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  body {
+    font-size: calc( 18px + strip-unit(4px) * ((100vw - 320px) / strip-unit(880px)));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
     font-size: 22px;
   }
 }
