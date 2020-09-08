@@ -1,6 +1,6 @@
 .headerWrapper {
   width: 100vw;
-  height: 25vw;
+  height: 50vh;
   position: relative;
   background: url("../images/bookshelf.jpg");
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@
       display: flex;
       font-family: $header-font-fam;
       justify-content: space-between;
-      @include fluid-type(320px, 1200px, 10px, 20px);
+      @include fluid-type(320px, 1200px, 17px, 20px);
 
       .navLink {
         color: #ffac41;
