@@ -301,6 +301,128 @@
   padding: 2vh;
 }
 
+.bookshelfWrapper {
+  width: 100vw;
+}
+
+.bookshelfWrapper .searchResultWrapper {
+  background-color: #fff;
+  width: 100%;
+}
+
+.bookshelfWrapper .searchResultWrapper .searchResultContent {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 5vh;
+}
+
+.bookshelfWrapper .searchResultWrapper .searchResultContent h2 {
+  font-family: "Indie Flower", cursive;
+  font-weight: bolder;
+  letter-spacing: 0.75rem;
+  line-height: 4.1rem;
+}
+
+.bookshelfWrapper .searchResultWrapper .searchResultContent h2 {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .bookshelfWrapper .searchResultWrapper .searchResultContent h2 {
+    font-size: calc( 20px + strip-unit(10px) * ((100vw - 320px) / strip-unit(880px)));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bookshelfWrapper .searchResultWrapper .searchResultContent h2 {
+    font-size: 30px;
+  }
+}
+
+.bookshelfWrapper .searchResultWrapper .searchResultContent .bookContainer {
+  display: block;
+  width: 100%;
+  margin: 5vh 0;
+  padding: 4vw;
+  border-bottom: 2px dashed #ffac41;
+}
+
+.bookshelfWrapper .searchResultWrapper .searchResultContent .bookContainer h3 {
+  font-family: "Inknut Antiqua", serif;
+  color: #ffac41;
+}
+
+.bookshelfWrapper .searchResultWrapper .searchResultContent .bookContainer h3 {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 320px) {
+  .bookshelfWrapper .searchResultWrapper .searchResultContent .bookContainer h3 {
+    font-size: calc( 25px + strip-unit(10px) * ((100vw - 320px) / strip-unit(880px)));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bookshelfWrapper .searchResultWrapper .searchResultContent .bookContainer h3 {
+    font-size: 35px;
+  }
+}
+
+.bookshelfWrapper .searchResultWrapper .searchResultContent .bookContainer h5 {
+  font-family: "Inknut Antiqua", serif;
+}
+
+.bookshelfWrapper .searchResultWrapper .searchResultContent .bookContainer h5 {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 320px) {
+  .bookshelfWrapper .searchResultWrapper .searchResultContent .bookContainer h5 {
+    font-size: calc( 15px + strip-unit(5px) * ((100vw - 320px) / strip-unit(880px)));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bookshelfWrapper .searchResultWrapper .searchResultContent .bookContainer h5 {
+    font-size: 20px;
+  }
+}
+
+.bookshelfWrapper .searchResultWrapper .searchResultContent .bookContainer .bookFirstRow {
+  width: 100%;
+  float: left;
+  text-align: center;
+  overflow: hidden;
+}
+
+.bookshelfWrapper .searchResultWrapper .searchResultContent .bookContainer .bookFirstRow .bookImageContainer {
+  width: 17%;
+  display: inline-block;
+  overflow: auto;
+}
+
+.bookshelfWrapper .searchResultWrapper .searchResultContent .bookContainer .bookFirstRow .bookImageContainer img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bookshelfWrapper .searchResultWrapper .searchResultContent .bookContainer .bookBottom {
+  display: block;
+  width: 100%;
+  margin: 4vh 0;
+  text-align: center;
+}
+
+.bookshelfWrapper .searchResultWrapper .searchResultContent .bookContainer .bookBottom .bookButton {
+  font-family: "Inknut Antiqua", serif;
+  width: 100%;
+  background-color: #ffac41;
+  border-radius: 10px;
+  color: #fff;
+  padding: 2vh;
+}
+
 body {
   font-family: "Crimson Text", serif;
   line-height: 2rem;
