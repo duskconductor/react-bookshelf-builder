@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Inknut+Antiqua:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Inknut+Antiqua:wght@800&family=Indie+Flower&display=swap");
 .headerWrapper {
   width: 100vw;
-  height: 20vw;
+  height: 25vw;
   position: relative;
   background: url("../images/bookshelf.jpg");
   background-repeat: no-repeat;
@@ -23,13 +23,46 @@
 .headerWrapper .headerContainer {
   width: 98%;
   position: fixed;
-  padding: 2vh 0;
-  background: rgba(0, 0, 0, 0.5);
+  padding: 2.5vh 0;
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .headerWrapper .headerContainer .headerLinkList {
   width: 70%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Inknut Antiqua", serif;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.headerWrapper .headerContainer .headerLinkList {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 320px) {
+  .headerWrapper .headerContainer .headerLinkList {
+    font-size: calc( 10px + strip-unit(10px) * ((100vw - 320px) / strip-unit(880px)));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .headerWrapper .headerContainer .headerLinkList {
+    font-size: 20px;
+  }
+}
+
+.headerWrapper .headerContainer .headerLinkList .navLink {
+  color: #ffac41;
+  text-decoration: none;
+}
+
+.headerWrapper .headerContainer .headerLinkList .navLink:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .headerWrapper .headerText {
@@ -60,6 +93,27 @@
   }
 }
 
+.headerWrapper .headerText h1 .headTextEmph {
+  margin-left: 0.5vw;
+  color: #ffac41;
+}
+
+.headerWrapper .headerText h1 .headTextEmph {
+  font-size: 50px;
+}
+
+@media screen and (min-width: 320px) {
+  .headerWrapper .headerText h1 .headTextEmph {
+    font-size: calc( 50px + strip-unit(20px) * ((100vw - 320px) / strip-unit(880px)));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .headerWrapper .headerText h1 .headTextEmph {
+    font-size: 70px;
+  }
+}
+
 .searchWrap {
   width: 100vw;
   background: #000;
@@ -71,7 +125,7 @@
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  padding: 1.25vw 0;
+  padding: 1.25vh 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -82,7 +136,11 @@
   height: 5vh;
   background-color: #323232;
   border-radius: 5px;
-  padding: 2px;
+  padding: 0.25vw 0.5vw;
+  font-family: "Indie Flower", cursive;
+  font-weight: bolder;
+  letter-spacing: 0.27rem;
+  color: white;
 }
 
 .searchWrap .searchbarWrap .searchbarField {
@@ -103,7 +161,9 @@
 
 .searchWrap .searchbarWrap .searchBtn {
   width: 9%;
+  border-radius: 5px;
   background-color: #323232;
+  color: #fff;
 }
 
 .searchWrap .searchbarWrap .searchBtn {

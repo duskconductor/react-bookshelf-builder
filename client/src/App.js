@@ -4,9 +4,7 @@ import "./assets/css/reset.css";
 import "./assets/css/style.css";
 import Header from "./components/Header";
 import Bookshelf from "./containers/bookshelf";
-import Login from "./containers/Login";
 import NotFound from "./containers/NotFound";
-import Register from "./containers/Register";
 import Search from "./containers/Search";
 
 function App() {
@@ -20,8 +18,6 @@ function App() {
           <div>
             <Switch>
               <Route exact path="/" component={Search} />
-              <Route exact path="/register" component={Register} />
-              <Route exact path="/login" component={Login} />
               <Route exact path="/bookshelf" component={Bookshelf} />
               <Route component={NotFound} />
             </Switch>
