@@ -1,12 +1,26 @@
 .searchWrap {
   width: 100vw;
-  background: rgba(0, 0, 0, 0.5);
+  background: #000;
 
   .searchbarWrap {
-    width: 100vw;
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    padding: 1.25vw 0;
+    justify-content: space-between;
 
     .searchbarField {
-      width: 100%;
+      width: 88%;
+      height: 5vh;
+      background-color: #323232;
+      border-radius: 5px;
+      padding: 2px;
+      @include fluid-type(320px, 1200px, 12px, 22px);
+    }
+    .searchBtn {
+      width: 9%;
+      background-color: #323232;
+      @include fluid-type(320px, 1200px, 12px, 22px);
     }
   }
 }

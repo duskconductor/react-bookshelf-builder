@@ -4,10 +4,6 @@ const Searchbar = (props) => {
   return (
     <form>
       <div className="searchbarWrap">
-        <label className="BookSearchLabel">
-          <h3>Search For Book</h3>
-        </label>
-        <br></br>
         <input
           className="searchbarField"
           value={props.search}
@@ -16,14 +12,14 @@ const Searchbar = (props) => {
           placeholder="Search for book"
           onChange={props.handleInputChange}
         />
+        <button
+          type="submit"
+          className="searchBtn"
+          onClick={props.handleFormSubmit}
+        >
+          <i class="fas fa-search"></i>
+        </button>
       </div>
-      <button
-        type="submit"
-        className="submitBtn btn btn-primary"
-        onClick={props.handleFormSubmit}
-      >
-        Search
-      </button>
     </form>
   );
 };
