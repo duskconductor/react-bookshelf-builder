@@ -50,6 +50,7 @@ class Search extends React.Component {
     let savedBooks = this.state.books.filter((book) => book.id === e.target.id);
 
     savedBooks = savedBooks[0];
+
     API.saveBooks(savedBooks)
       .then(this.setState({ message: alert("Your book is saved") }))
       .catch((err) => console.log(err));
@@ -65,7 +66,7 @@ class Search extends React.Component {
         />
         <SearchResult
           books={this.state.books}
-          handleSavedButton={() => this.handleSavedButton}
+          handleSavedButton={this.handleSavedButton}
         />
       </div>
     );
