@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Inknut+Antiqua:wght@800&family=Indie+Flower&display=swap");
 .headerWrapper {
   width: 100vw;
-  height: 25vw;
+  height: 50vh;
   position: relative;
   background: url("../images/bookshelf.jpg");
   background-repeat: no-repeat;
@@ -41,12 +41,12 @@
 }
 
 .headerWrapper .headerContainer .headerLinkList {
-  font-size: 10px;
+  font-size: 17px;
 }
 
 @media screen and (min-width: 320px) {
   .headerWrapper .headerContainer .headerLinkList {
-    font-size: calc( 10px + strip-unit(10px) * ((100vw - 320px) / strip-unit(880px)));
+    font-size: calc( 17px + strip-unit(3px) * ((100vw - 320px) / strip-unit(880px)));
   }
 }
 

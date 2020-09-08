@@ -4,7 +4,7 @@ const SearchResult = (props) => {
   return props.books.length === 0 ? (
     <div className="searchResultWrapper">
       <div className="searchResultContent">
-        <p>Use the search bar above to search for any book.</p>
+        <p></p>
       </div>
     </div>
   ) : (
@@ -35,9 +35,9 @@ const SearchResult = (props) => {
                 <button
                   className="bookButton"
                   id={book.id}
-                  onClick={() => props.handleDeleteButton(book.id)}
+                  onClick={(e) => props.handleSavedButton(e)}
                 >
-                  Remove
+                  Save Book
                 </button>
               </div>
             </div>
