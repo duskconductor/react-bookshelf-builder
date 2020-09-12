@@ -28,7 +28,7 @@ const SearchResult = (props) => {
               </div>
               <div className="bookSecondRow">
                 <p>
-                  {book.description}
+                  {book.description} ...
                   <a href={book.link} target="_blank">
                     Learn More
                   </a>
