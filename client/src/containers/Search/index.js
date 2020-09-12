@@ -21,7 +21,7 @@ class Search extends React.Component {
     API.getGoogleSearchBooks(this.state.search)
       .then((res) => {
         if (res.data.items === "error") {
-          throw new Error(res.data.item);
+          return "error";
         } else {
           let results = res.data.items;
 
