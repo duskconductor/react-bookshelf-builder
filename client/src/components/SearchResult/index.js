@@ -4,7 +4,10 @@ const SearchResult = (props) => {
   return props.books.length === 0 ? (
     <div className="searchResultWrapper">
       <div className="searchResultContent">
-        <p></p>
+        <h2>
+          <i class="fas fa-search"></i> Finding {props.searched}
+        </h2>
+        <p>Currently no results</p>
       </div>
     </div>
   ) : (
@@ -25,7 +28,7 @@ const SearchResult = (props) => {
               </div>
               <div className="bookSecondRow">
                 <p>
-                  {book.description.substring(0, 300)}...{" "}
+                  {book.description}
                   <a href={book.link} target="_blank">
                     Learn More
                   </a>
