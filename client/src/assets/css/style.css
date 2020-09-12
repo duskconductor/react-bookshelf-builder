@@ -183,6 +183,10 @@
   }
 }
 
+.searchWrap .searchbarWrap .searchBtn:hover {
+  cursor: pointer;
+}
+
 .searchWrap .searchResultWrapper {
   background-color: #fff;
   width: 100%;

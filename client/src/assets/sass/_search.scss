@@ -27,6 +27,10 @@
       background-color: #323232;
       color: #fff;
       @include fluid-type(320px, 1200px, 12px, 22px);
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
@@ -81,10 +85,6 @@
               object-fit: cover;
             }
           }
-        }
-
-        .bookSecondRow {
-          //
         }
 
         .bookBottom {
