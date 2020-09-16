@@ -17,7 +17,7 @@ const Searchbar = (props) => {
           className="searchBtn"
           onClick={props.handleFormSubmit}
         >
-          <i class="fas fa-search"></i>
+          <i className="fas fa-search"></i>
         </button>
       </div>
     </form>

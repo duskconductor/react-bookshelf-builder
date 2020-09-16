@@ -5,7 +5,7 @@ const SearchResult = (props) => {
     <div className="searchResultWrapper">
       <div className="searchResultContent">
         <h2>
-          <i class="fas fa-search"></i> Finding {props.searched}
+          <i className="fas fa-search"></i> Finding {props.searched}
         </h2>
         <p>Currently no results</p>
       </div>
@@ -14,7 +14,7 @@ const SearchResult = (props) => {
     <div className="searchResultWrapper">
       <div className="searchResultContent">
         <h2>
-          <i class="fas fa-search"></i> - {props.searched}
+          <i className="fas fa-search"></i> - {props.searched}
         </h2>
         {props.books.map((book) => {
           return (

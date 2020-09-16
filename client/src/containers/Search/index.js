@@ -32,7 +32,11 @@ class Search extends React.Component {
               title: result.volumeInfo.title,
               author: result.volumeInfo.authors,
               description: result.volumeInfo.description,
-              image: result.volumeInfo.imageLinks.thumbnail,
+              image:
+                result &&
+                result.volumeInfo &&
+                result.volumeInfo.imageLinks &&
+                result.volumeInfo.imageLinks.thumbnail,
               link: result.volumeInfo.infoLink,
             };
 
@@ -41,12 +45,14 @@ class Search extends React.Component {
           this.setState({ books: results, error: "" });
         }
       })
-      .catch((err) => this.setState({ error: err.items }));
+      .catch((err) => {
+        this.setState({ error: err.items });
+      });
   };
 
   handleSavedButton = (e) => {
     e.preventDefault();
-    console.log(this.state.books);
+
     let savedBooks = this.state.books.filter((book) => book.id === e.target.id);
 
     savedBooks = savedBooks[0];
