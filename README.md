@@ -1,29 +1,12 @@
-# React Bookshelf Builder
+# MERN Bookshelf Builder
 
-**Link to Live:** https://bookshelf-builder.herokuapp.com/
+**Live Deactivated (Teaching materials moved away from classes and to hooks)**
 
 React app that draws a list of books from Google books API given query. Saves selected books for future reference.
 
-## Motivation
+Created to show students how MERN comes together in the simplest way.
 
-Completed as a homework assignment for UCLA Bookcamp.
-
-## Build Status
-
-Minimum Viable Product.
-
-## Database used
-
-- Mongo Atlas (MongoDbB/Mongoose)
-
-## Languages/Technologies/Frameworks Used
-
-- HTML
-- Sass
-- Javascript
-- React
-- Mongo/Mongoose
-- Express-Node-Session
+Still keep around to show students the class equivalent of hooks.
 
 ## Screenshot
 
